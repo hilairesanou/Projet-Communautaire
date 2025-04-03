@@ -1,0 +1,67 @@
+{% extends 'main/base.html' %}
+
+{% block title %}Accueil | Communauté Tech{% endblock %}
+
+{% block content %}
+<div class="text-center">
+    <!-- Section Carousel (placeholder pour l'instant) -->
+    <div id="carouselExampleIndicators" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+          <img src="https://via.placeholder.com/1200x400" class="d-block w-100" alt="Image 3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <!-- Section Présentation -->
+    <h1>Bienvenue sur la plateforme Communautaire</h1>
+    <p class="lead">Un espace dédié aux passionnés d'informatique, IA, cybersécurité et développement logiciel.</p>
+
+    <!-- Section Domaines d'intervention -->
+    <h2 class="mt-5">Nos domaines d'intervention</h2>
+    <div class="row">
+        <!-- Exemple de bloc pour un domaine -->
+        <div class="col-md-3">
+            <div class="card p-3 shadow">
+                <h5>Intelligence Artificielle</h5>
+                <p>Description brève du domaine...</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-3 shadow">
+                <h5>Cybersécurité</h5>
+                <p>Description brève du domaine...</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-3 shadow">
+                <h5>Développement Logiciel</h5>
+                <p>Description brève du domaine...</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card p-3 shadow">
+                <h5>Programmation Informatique</h5>
+                <p>Description brève du domaine...</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
